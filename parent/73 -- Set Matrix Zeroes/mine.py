@@ -2,7 +2,8 @@ from typing import List, Optional
 
 class Solution:
     # CORRECT, but kinda slow. It's accepted sha
-    # O(m*n) time complexity
+    # Time: O(mn(m + n))
+    # Space: O(mn)
     def setZeroes(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.

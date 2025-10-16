@@ -4,9 +4,9 @@ class Solution:
         # Time complexity = O(log n)
         # Space complexity = O(log n)
         
-        if n==3 or n == 1:
+        if n == 1:
             return True
-        elif n < 3:
+        elif n < 1 or n%3 != 0:
             return False
         
         return self.isPowerOfThree(n/3)

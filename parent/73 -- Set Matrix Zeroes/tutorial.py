@@ -1,14 +1,12 @@
 from typing import List, Optional
 
 class Solution:
-    # CORRECT, but kinda slow. It's accepted sha
+    # CORRECT
     # O(m*n) time complexity
     def setZeroes(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
         """
-        zeroCoordinates = []
-        # [(1,2), (2,4)]
         rowZero = False
 
         for r in range(len(matrix)):
