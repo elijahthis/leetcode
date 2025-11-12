@@ -1,6 +1,10 @@
 from collections import deque
 
 def generate_all_iterative(s: str):
+    """
+    Question: Given a string like "01?0". 
+    # If ? can be 0 or 1,  print all possible outcomes
+    """
     # No recursion → avoids recursion depth limits.
     # Straightforward logic → uses simple list transformations.
 

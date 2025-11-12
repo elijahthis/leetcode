@@ -1,6 +1,9 @@
 def generate_all(s: str) -> List[str]:
+    """
+    Question: Given a string like "01?0". 
+    # If ? can be 0 or 1,  print all possible outcomes
+    """
     # 0??1?0
-    # "01?0". If ? can be 0 or 1,  print all possible outcomes
     # Time: O(2^k),
     # Space: O(2^k),
     
