@@ -29,8 +29,12 @@ class Solution:
                 else:
                     result.append([num, nums[l], nums[r]])
                     # update pointers
+                    # check for l AND r duplicates
                     l += 1
+                    r -= 1
                     while nums[l] == nums[l-1] and l < r:
                         l += 1
+                    while nums[r] == nums[r+1] and l < r:
+                        r -= 1
 
         return result

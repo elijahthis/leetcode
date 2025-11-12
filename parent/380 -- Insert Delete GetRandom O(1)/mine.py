@@ -2,35 +2,33 @@ import random
 
 class RandomizedSet:
     # pretty straight-forward.
-    # Key Points:
-    #  1. Use a hashset to store the elements. This will help in O(1) time complexity for insert and remove operations.
-    #  2. Use a list to store the elements in parallel. This will help in O(1) time complexity for getRandom operation.
     
     def __init__(self):
-        self.my_set = set()
+        self.my_hash = {}
         self.my_list = []
 
     def insert(self, val: int) -> bool:
-        if val in self.my_set:
+        if val in self.my_hash:
             return False
-        else:
-            self.my_set.add(val)
-            self.my_list.append(val)
-            return True
+        self.my_hash[val] = len(self.my_hash)
+        self.my_list.append(val)
+        return True
 
     def remove(self, val: int) -> bool:
-        if val in self.my_set:
-            self.my_set.remove(val)
-            self.my_list.remove(val)
-            return True
-        else:
+        if val not in self.my_hash:
             return False
 
-    def getRandom(self) -> int:
-        element_index = random.randrange(0, len(self.my_list))
-        element = self.my_list[element_index]
+        lastVal, ind = self.my_list[-1], self.my_hash[val]
+        self.my_list[ind] = lastVal
+        self.my_hash[lastVal] = ind
+        
+        self.my_list.pop()
+        del self.my_hash[val]
+        return True
+        
 
-        return element
+    def getRandom(self) -> int:
+        return random.choice(self.my_list)
 
 
 # Your RandomizedSet object will be instantiated and called as such:

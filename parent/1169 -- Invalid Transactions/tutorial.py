@@ -6,7 +6,7 @@ class Solution:
         # - We can iterate through the transactions and check if the amount is greater than 1000
         # - We can iterate through the transactions and check if the name is the same but the city is different
         # - We can iterate through the transactions and check if the time difference is greater than 60
-        # - The time complexity is O(nlogn) where n is the number of transactions
+        # - The time complexity is O(n^2) where n is the number of transactions
         # - The space complexity is O(n) where n is the number of transactions
     
         parsed_transactions = []

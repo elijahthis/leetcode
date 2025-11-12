@@ -4,26 +4,39 @@
 9 -- Palindrome Number
 11 -- Container With Most Water
 12 -- Integer to Roman
+13 -- Roman to Integer
 14 -- Longest Common Prefix
 15 -- 3Sum
+16 -- 3Sum Closest
 17 -- Letter Combinations of a Phone Number
+18 -- 4Sum
 20 -- Valid Parentheses
+21 -- Merge Two Sorted Lists
 22 -- Generate Parentheses
 26 -- Remove Duplicates from Sorted Array
+36 -- Valid Sudoku
 39 -- Combination Sum
 40 -- Combination Sum II
 43 -- Multiply Strings
 48 -- Rotate Image
 49 -- Group Anagrams
 50 -- Pow(x, n)
+53 -- Maximum Subarray
+54 -- Spiral Matrix
+56 -- Merge Intervals
+59 -- Spiral Matrix II
 62 -- Unique Paths
 63 -- Unique Paths II
+64 -- Minimum Path Sum
 66 -- Plus One
 67 -- Add Binary
 69 -- Sqrt(x)
 70 -- Climbing Stairs
 73 -- Set Matrix Zeroes
+74 -- Search a 2D Matrix
 79 -- Word Search
+80 -- Remove Duplicates from Sorted Array II
+83 -- Remove Duplicates from Sorted List
 94 -- Binary Tree Inorder Traversal
 95 -- Unique Binary Search Trees II
 96 -- Unique Binary Search Trees
@@ -46,32 +59,60 @@
 125 -- Valid Palindrome
 129 -- Sum Root to Leaf Numbers
 130 -- Surrounded Regions
+133 -- Clone Graph
 136 -- Single Number
 137 -- Single Number II
+139 -- Word Break
+140 -- Word Break II
 144 -- Binary Tree Preorder Traversal
 145 -- Binary Tree Postorder Traversal
 146 -- LRU Cache
+155 -- Min Stack
+162 -- Find Peak Element
 167 -- Two Sum II - Input Array Is Sorted
-199 -- Binary Tree Right Side View
-209 -- Minimum Size Subarray Sum
+169 -- Majority Element1
+173 -- Binary Search Tree Iterator
+190 -- Reverse Bits
 198 -- House Robber
+199 -- Binary Tree Right Side View
 200 -- Number of Islands
+206 -- Reverse Linked List
+207 -- Course Schedule
+209 -- Minimum Size Subarray Sum
+210 -- Course Schedule II
 213 -- House Robber 2
 215 -- Kth Largest Element in an Array
 217 -- Contains Duplicate
 231 -- Power of Two
 234 -- Palindrome Linked List
+240 -- Search a 2D Matrix II
 242 -- Valid Anagram
 326 -- Power of Three
 342 -- Power of Four
+347 -- Top K Frequent Elements
 377 -- Combination Sum IV
+380 -- Insert Delete GetRandom O(1)
 394 -- Decode String
 409 -- Longest Palindrome
 415 -- Add Strings
 437 -- Path Sum III
 441 -- Arranging Coins
 485 -- Max Consecutive Ones
+498 -- Diagonal Traverse
+509 -- Fibonacci Number
+647 -- Palindromic Substrings
 680 -- Valid Palindrome II
 703 -- Kth Largest Element in a Stream
+704 -- Binary Search
+766 -- Toeplitz Matrix
+797 -- All Paths From Source to Target
+867 -- Transpose Matrix
 875 -- Koko Eating Bananas
+885 -- Spiral Matrix III
+983 -- Minimum Cost For Tickets
+997 -- Find the Town Judge
+1091 -- Shortest Path in Binary Matrix
+1209 -- Remove All Adjacent Duplicates in String II
+1424 -- Diagonal Traverse II
+2326 -- Spiral Matrix IV
 2560 -- House Robber IV

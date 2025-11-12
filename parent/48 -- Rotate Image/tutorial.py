@@ -16,6 +16,7 @@ class Solution:
 
                 # swap in reverse
                 matrix[top][l+i] = matrix[bottom-i][l]       # move bl into tl
+           
                 matrix[bottom-i][l] = matrix[bottom][r-i]    # move br into bl
                 matrix[bottom][r-i] = matrix[top+i][r]       # move bl into tl
                 matrix[top+i][r] = topLeft     # move bl into tl

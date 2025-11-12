@@ -1,0 +1,16 @@
+Bloomberg | Phone Screen | Find Path b/w 2 objects in a desert
+
+Given a 2d matrix that represents a matrix where . denotes empty land, c indicates car, and o indicates oasis, and another integer gas which indicates gas we have left. Traversing one unit in the matrix consumes 1 gas unit. You can move up, down, left, and right.
+So Example: the matrix below and gas = 5 returns true since we can get from c to o in 5 units (1 unit left, 3 units down, and 1 unit right)
+[[. . . c .]
+[. . . . .]
+[. . . . .]
+[ . . o . .]]
+
+a) Check if car can reach oasis or not. (return bool val)
+b) Now suppose there is a gas station in the matrix somewhere that is denoted by an integer k
+   where k represents the gas units that the car will be refuelled. 
+   So if k is 2, car will gain gas. 
+   Check if car can still reach oasis (with or without gas station).
+c) Now let's say there's obstacles in the matrix represented by r. 
+   how would you check if car can reach oasis?

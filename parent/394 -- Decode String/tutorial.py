@@ -24,6 +24,7 @@ class Solution:
                 k = ""
                 while stack and stack[-1].isdigit():
                     k = stack.pop() + k
+                    
                 
                 stack.append(substr * int(k))
         
