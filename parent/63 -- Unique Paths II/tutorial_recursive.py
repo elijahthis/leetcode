@@ -2,6 +2,7 @@ class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         # Time: O(M × N)
         # Space: O(M × N)
+        # memoized dfs
 
         M, N = len(obstacleGrid), len(obstacleGrid[0])
         dp = {(M-1,N-1): 1}

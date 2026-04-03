@@ -1,5 +1,8 @@
 class Solution:
     def decodeString(self, s: str) -> str:
+        # Time: O(n)
+        # Space: O(n)
+
         stack = []
 
         for char in s:

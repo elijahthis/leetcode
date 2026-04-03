@@ -7,6 +7,8 @@ class Solution:
         # - We can iterate through the grid and when we encounter a 1, we can increment the number of islands
         # - We can then perform a BFS to traverse the island and mark the cells as visited
         # - We can then increment the number of islands
+        # Time: O(m*n)
+        # Space: O(m*n)
 
 
         if not grid:

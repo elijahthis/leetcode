@@ -11,6 +11,7 @@ class MinStack:
         # the current minimum minStack[-1] (if it exists).
         # So at every point, minStack[i] = minimum of the first i+1 elements.
         self.stack.append(val)
+        # minVal = self.minStack[-1] if self.minStack and self.minStack[-1] < val else val
         minVal = min(self.minStack[-1], val) if self.minStack else val
         self.minStack.append(minVal)
 

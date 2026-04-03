@@ -8,9 +8,9 @@ class Solution:
         l,r = 0, len(matrix)-1
 
         while l < r:
+            top, bottom = l, r  # initialize at l,r
+            
             for i in range(r-l):    # cos we want len-1 iterations
-                top, bottom = l, r  # initialize at l,r
-                
                 # save the top left value
                 topLeft = matrix[top][l+i]
 

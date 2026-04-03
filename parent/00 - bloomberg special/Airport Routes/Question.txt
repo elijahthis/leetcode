@@ -1,0 +1,34 @@
+Construct a class of airport routes that contains:
+
+addRoute(start, destination): adds a possible route from start airport to destination airport
+printRoutes(start, destination): prints all possible routes between two destinations
+
+Example:
+addRoute("A", "B")
+addRoute("A", "C")
+addRoute("B", "D")
+addRoute("C", "D")
+
+printRoutes("A", "D") should return [["A", "B", "D"], ["A", "C", "D"]]
+
+ASSUMPTIONS:
+- Every Airport will be represented as a single character string
+- Will always be alphabets, and "A" != "a"
+- If no valid routes, print your empty array
+
+FOLLOW-UPS:
+Spoiler: It's a graph question
+- Optimize adjacency list defaultdict(arr -> set)
+- Optimize your cycle check (arr -> set)
+- Discuss time complexity improvements for both of the above
+  KEY: discuss time/space trade-offs
+- What's the worst possible space complexity of your adjacency list (in terms of only N - no. of nodes):
+  TIP: when all airports are conected to each other
+- What's the time complexity of printRoutes when the above is true (in terms of only N. No E) 
+  Ans was N!
+  A BCD E
+  A BDC E
+  A CBG E
+  ...
+  Leads to Permutation. (N-2) P (N-2)
+  Basically simplifies down to O(N!)
