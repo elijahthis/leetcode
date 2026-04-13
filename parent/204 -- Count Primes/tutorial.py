@@ -1,6 +1,6 @@
 class Solution:
     def countPrimes(self, n: int) -> int:
-        # Time: O(n log log n). Optimal
+        # Time: O(n log log n). Optimal Sieve of Eratosthenes
         # “Don’t just mark multiples — mark them starting from where redundancy begins.”. p → p²
 
         if n < 2:

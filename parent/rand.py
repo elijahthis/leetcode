@@ -1,21 +1,21 @@
-import random
+import random, os
 
 def count_lines_in_file(filepath):
     try:
-        with open(filepath, 'r') as file:
-            lines = file.readlines()
-            line_count = len(lines)
-            return [line_count, lines]
+        contents = os.listdir(filepath)
+        return contents
     except FileNotFoundError:
         print(f"Error: The file '{filepath}' was not found.")
-        return [0, []]
+        return []
     except Exception as e:
         print(f"An error occurred: {e}")
-        return [0, []]
+        return []
 
-count, lines = count_lines_in_file("/Users/elijahoyerinde/Documents/leetcode/parent/meta.txt")
+questions = count_lines_in_file("/Users/elijahoyerinde/Documents/leetcode/parent")
+count = len(questions)
 
 if count > 0:
     sample_size = min(5, count)
+    print(count)
     for i in random.sample(range(count), sample_size):
-        print(lines[i].strip())
+        print(questions[i].strip())
