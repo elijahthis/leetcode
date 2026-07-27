@@ -1,4 +1,3 @@
-import heapq
 class Solution:
     def nthSuperUglyNumber(self, n: int, primes: List[int]) -> int:
         # Best / Most optimal

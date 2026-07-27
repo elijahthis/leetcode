@@ -1,6 +1,9 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        # also happens to be Neetcode's
+        # Greedy 2-Ptr (also happens to be Neetcode's)
+        # Time: O(n)
+        # Space: O(1)
+
         l,r = 0, len(height)-1
         maxArea = 0
 

@@ -1,4 +1,3 @@
-import heapq
 class Solution:
     def nthUglyNumber(self, n: int) -> int:
         # 3 Pointer + 2D-DP solution
