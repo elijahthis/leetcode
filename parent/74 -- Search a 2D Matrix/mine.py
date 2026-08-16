@@ -1,7 +1,8 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        # Fastest
-        # Time: O(m⋅logn)
+        # (probably don't do this. the loop might look like an O(m + logn solution)\
+        # violates restrictions
+        # Time: O(m+logn)
         # Space: O(1)
         for row in matrix:
             if row[-1] >= target:
