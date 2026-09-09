@@ -1,6 +1,6 @@
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        # Too Fragile / Complicated
+        # Too Fragile / Complicated / Britle
         # Time:  O(log(min(m,n)))
         # Space: O(n)
         

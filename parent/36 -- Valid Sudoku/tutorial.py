@@ -1,10 +1,13 @@
-import collections
+from collections import defaultdict
 
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        rows = collections.defaultdict(set)
-        cols = collections.defaultdict(set)
-        square = collections.defaultdict(set)
+        # Time: O(m*n)
+        # Space: O(m*n)
+
+        rows = defaultdict(set)
+        cols = defaultdict(set)
+        square = defaultdict(set)
 
         for r in range(9):
             for c in range(9):
