@@ -9,7 +9,8 @@ from typing import List, Optional
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         # recursive solution
-
+        # Time: O(n)
+        # Space: O(n)
         if not head:
             return head
         
@@ -17,7 +18,8 @@ class Solution:
 
         if head.next:
             new_head = self.reverseList(head.next)
-            head.next.next = head
+            new_tail = head.next
+            new_tail.next = head
         head.next = None
 
         return new_head

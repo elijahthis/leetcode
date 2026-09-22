@@ -7,9 +7,7 @@ class ListNode:
         self.next = next
 
 class Solution:
-    """ CORRECT, Optimal, Beats 100% of submissions
-        Passes all test cases
-        Mine is better than NeetCode's solution
+    """ 
     """
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev_node = None
